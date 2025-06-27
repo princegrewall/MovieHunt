@@ -1,73 +1,40 @@
-# Welcome to your Lovable project
+# 🎬 MovieHunt - Frontend
 
-## Project info
+**MovieHunt** is a sleek and responsive React + TypeScript web application that allows users to browse popular movies, search for their favorites, and rate them. It also includes a toggle for dark and light modes, enhancing the user experience.
 
-**URL**: https://lovable.dev/projects/b0925697-3efb-4ecf-87cf-d40ed5bc35e6
+---
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- 🔍 **Search Movies** – Search for any movie by title
+- ⭐ **Rate Movies** – Click to rate your favorites
+- 📈 **Popular Movies Section** – View trending or most-watched movies
+- 🌗 **Dark/Light Mode Toggle** – Smooth and responsive theme switching
+- ⚡ **Fast & Responsive UI** – Built with TypeScript and React best practices
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b0925697-3efb-4ecf-87cf-d40ed5bc35e6) and start prompting.
+## 🧱 Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend Framework**: [React.js]
+- **Language**: [TypeScript]
+- **Styling**: CSS Modules / Tailwind CSS 
 
-**Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🚀 Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 1. Clone the repository
 
-Follow these steps:
+git clone https://github.com/princegrewall/MovieHunt.git
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+cd MovieHunt
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies
 
-# Step 3: Install the necessary dependencies.
-npm i
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Run the development server
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b0925697-3efb-4ecf-87cf-d40ed5bc35e6) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
