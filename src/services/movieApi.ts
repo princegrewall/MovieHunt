@@ -1,5 +1,4 @@
-
-const OMDB_API_KEY = '2c9c5ac4'; // Free API key for demonstration
+const OMDB_API_KEY = '2c9c5ac4'; 
 const BASE_URL = 'https://www.omdbapi.com/';
 
 export interface Movie {
@@ -228,15 +227,22 @@ const staticMovies: Movie[] = [
   }
 ];
 
+
 export const searchMovies = async (query: string, page: number = 1): Promise<{ movies: Movie[], totalResults: number }> => {
   // Simulate API delay
   await new Promise(resolve => setTimeout(resolve, 500));
   
-  const filteredMovies = staticMovies.filter(movie => 
-    movie.Title.toLowerCase().includes(query.toLowerCase()) ||
-    movie.Genre?.toLowerCase().includes(query.toLowerCase()) ||
-    movie.Director?.toLowerCase().includes(query.toLowerCase())
-  );
+  // Combine both Hollywood and Bollywood movies
+  const allMovies = [...staticMovies];
+
+  // Filter by title only, and ensure valid image
+  const filteredMovies = allMovies.filter(movie => 
+    movie.Title.toLowerCase().includes(query.toLowerCase()) &&
+    movie.Poster && movie.Poster !== 'N/A'
+  ).map(movie => ({
+    ...movie,
+    Poster: movie.Poster && movie.Poster !== 'N/A' ? movie.Poster : '/placeholder.svg'
+  }));
   
   const startIndex = (page - 1) * 10;
   const endIndex = startIndex + 10;

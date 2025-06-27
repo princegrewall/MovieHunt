@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Loader2 } from 'lucide-react';
 import Header from '@/components/Header';
@@ -84,24 +83,24 @@ const Movies = () => {
                   : `No results found for "${searchQuery}"`
                 }
               </p>
-              <Button
+              {/* <Button
                 variant="ghost"
                 onClick={loadPopularMovies}
                 className="mt-2 text-red-600 hover:text-red-700"
               >
                 Show Popular Movies
-              </Button>
+              </Button> */}
             </div>
           )}
         </div>
 
         {/* Movies Grid */}
-        {loading && movies.length === 0 ? (
+        {movies.length === 0 ? (
           <div className="flex justify-center items-center py-20">
-            <div className="text-center">
+            {/* <div className="text-center">
               <Loader2 className="h-8 w-8 animate-spin mx-auto mb-4 text-red-600" />
               <p className="text-muted-foreground">Loading movies...</p>
-            </div>
+            </div> */}
           </div>
         ) : movies.length > 0 ? (
           <>

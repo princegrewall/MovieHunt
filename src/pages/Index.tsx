@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Film, Search, Star } from 'lucide-react';
@@ -36,7 +35,7 @@ const Index = () => {
           <div className="mb-8">
             <Film className="h-16 w-16 mx-auto mb-6 text-red-600" />
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-red-600 via-red-500 to-red-400 bg-clip-text text-transparent">
-              CineSearch
+              MovieHunt
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
               Discover, explore, and rate your favorite movies from the world's largest movie database

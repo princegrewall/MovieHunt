@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from 'react-router-dom';
 import { Moon, Sun, Film } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -14,7 +13,7 @@ const Header = () => {
         <Link to="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
           <Film className="h-8 w-8 text-red-600" />
           <span className="text-2xl font-bold bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent">
-            CineSearch
+            MovieHunt
           </span>
         </Link>
 
